@@ -77,7 +77,7 @@
 
             echo  '<td>' . $value['className']     .  '</td>';
 
-            echo   '<td>Alındı </td>';
+            echo   '<td>Alınmadı </td>';
 
             echo '<th> <a class="btn btn-success btn-sm" href="sclasses.php?action=addClass&dersAdi='.$value['className'].'&dersID='.$value['classID'].'">Ekle </a> </th></tr>';
         }
