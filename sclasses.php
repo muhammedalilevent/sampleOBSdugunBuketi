@@ -93,7 +93,7 @@
                 $userId = $_COOKIE['userId'];
                 $dersID = $_GET['dersID'];
                 $dersAdi = $_GET['dersAdi'];
-                $sql3 = "insert into pickedclasses(studentNumber , classID , className) values (".$userId.",".$dersID.",'".$dersAdi."')";
+                $sql3 = "insert into pickedClasses(studentNumber , classID , className) values (".$userId.",".$dersID.",'".$dersAdi."')";
 
                 if (mysqli_query($connect, $sql3)) {
                     header('Location: sclasses.php');
@@ -103,7 +103,7 @@
                 break;
             case 'deleteClass':
                 $pcID = $_GET['pcID'];
-                $sql_delete = "DELETE FROM pickedclasses WHERE pcID=$pcID";
+                $sql_delete = "DELETE FROM pickedClasses WHERE pcID=$pcID";
                 if (mysqli_query($connect, $sql_delete)) {
                     header('Location: sclasses.php');
                 }
